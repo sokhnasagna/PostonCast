@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_podcast: MyString
+  date: MyString
+  genre: MyString
+  description: MyString
+  image: MyString
+  fichier: MyString
+
+two:
+  id_podcast: MyString
+  date: MyString
+  genre: MyString
+  description: MyString
+  image: MyString
+  fichier: MyString

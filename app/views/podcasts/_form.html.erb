@@ -1,0 +1,47 @@
+<%= form_with(model: podcast, local: true) do |form| %>
+  <% if podcast.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(podcast.errors.count, "error") %> prohibited this podcast from being saved:</h2>
+
+      <ul>
+      <% podcast.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_podcast %>
+    <%= form.text_field :id_podcast, id: :podcast_id_podcast %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date, id: :podcast_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :genre %>
+    <%= form.text_field :genre, id: :podcast_genre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :podcast_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :podcast_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fichier %>
+    <%= form.text_field :fichier, id: :podcast_fichier %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

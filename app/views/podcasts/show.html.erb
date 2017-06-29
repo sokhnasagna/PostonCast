@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id podcast:</strong>
+  <%= @podcast.id_podcast %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @podcast.date %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @podcast.genre %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @podcast.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @podcast.image %>
+</p>
+
+<p>
+  <strong>Fichier:</strong>
+  <%= @podcast.fichier %>
+</p>
+
+<%= link_to 'Edit', edit_podcast_path(@podcast) %> |
+<%= link_to 'Back', podcasts_path %>
