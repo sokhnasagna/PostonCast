@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_group: MyString
+  dateCreation: 2017-06-29
+  libelle: MyString
+  image: MyString
+
+two:
+  id_group: MyString
+  dateCreation: 2017-06-29
+  libelle: MyString
+  image: MyString

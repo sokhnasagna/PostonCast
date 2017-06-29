@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id group:</strong>
+  <%= @groupe_podcast.id_group %>
+</p>
+
+<p>
+  <strong>Datecreation:</strong>
+  <%= @groupe_podcast.dateCreation %>
+</p>
+
+<p>
+  <strong>Libelle:</strong>
+  <%= @groupe_podcast.libelle %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @groupe_podcast.image %>
+</p>
+
+<%= link_to 'Edit', edit_groupe_podcast_path(@groupe_podcast) %> |
+<%= link_to 'Back', groupe_podcasts_path %>

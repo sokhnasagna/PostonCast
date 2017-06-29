@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :groupe_podcasts
+  resources :playlists
+  resources :abonnements
+  resources :comptes
   resources :podcasts
   resources :lectures
   resources :users

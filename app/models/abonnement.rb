@@ -1,0 +1,2 @@
+class Abonnement < ApplicationRecord
+end

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Abonnements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Id groupepodcast</th>
+      <th>Id user</th>
+      <th>Dateabonnement</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @abonnements.each do |abonnement| %>
+      <tr>
+        <td><%= abonnement.id %></td>
+        <td><%= abonnement.id_groupePodcast %></td>
+        <td><%= abonnement.id_user %></td>
+        <td><%= abonnement.dateAbonnement %></td>
+        <td><%= link_to 'Show', abonnement %></td>
+        <td><%= link_to 'Edit', edit_abonnement_path(abonnement) %></td>
+        <td><%= link_to 'Destroy', abonnement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Abonnement', new_abonnement_path %>

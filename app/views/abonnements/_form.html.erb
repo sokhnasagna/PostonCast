@@ -1,0 +1,37 @@
+<%= form_with(model: abonnement, local: true) do |form| %>
+  <% if abonnement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(abonnement.errors.count, "error") %> prohibited this abonnement from being saved:</h2>
+
+      <ul>
+      <% abonnement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id, id: :abonnement_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_groupePodcast %>
+    <%= form.text_field :id_groupePodcast, id: :abonnement_id_groupePodcast %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_user %>
+    <%= form.text_field :id_user, id: :abonnement_id_user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateAbonnement %>
+    <%= form.text_field :dateAbonnement, id: :abonnement_dateAbonnement %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

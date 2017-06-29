@@ -1,0 +1,37 @@
+<%= form_with(model: compte, local: true) do |form| %>
+  <% if compte.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(compte.errors.count, "error") %> prohibited this compte from being saved:</h2>
+
+      <ul>
+      <% compte.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id, id: :compte_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :compte_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :psswd %>
+    <%= form.text_field :psswd, id: :compte_psswd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_user %>
+    <%= form.text_field :id_user, id: :compte_id_user %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

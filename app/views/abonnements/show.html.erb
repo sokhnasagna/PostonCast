@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @abonnement.id %>
+</p>
+
+<p>
+  <strong>Id groupepodcast:</strong>
+  <%= @abonnement.id_groupePodcast %>
+</p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @abonnement.id_user %>
+</p>
+
+<p>
+  <strong>Dateabonnement:</strong>
+  <%= @abonnement.dateAbonnement %>
+</p>
+
+<%= link_to 'Edit', edit_abonnement_path(@abonnement) %> |
+<%= link_to 'Back', abonnements_path %>

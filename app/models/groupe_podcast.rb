@@ -1,0 +1,2 @@
+class GroupePodcast < ApplicationRecord
+end

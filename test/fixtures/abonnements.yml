@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: MyString
+  id_groupePodcast: MyString
+  id_user: MyString
+  dateAbonnement: MyString
+
+two:
+  id: MyString
+  id_groupePodcast: MyString
+  id_user: MyString
+  dateAbonnement: MyString

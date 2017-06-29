@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @playlist.id_user %>
+</p>
+
+<p>
+  <strong>Id podcast:</strong>
+  <%= @playlist.id_podcast %>
+</p>
+
+<p>
+  <strong>Datecreation:</strong>
+  <%= @playlist.dateCreation %>
+</p>
+
+<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%= link_to 'Back', playlists_path %>
